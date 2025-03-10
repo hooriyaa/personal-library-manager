@@ -53,7 +53,7 @@ def recommend_books(library, genre):
     return [book for book in library if book["Genre"].lower() == genre.lower()]
 
 # UI Enhancements
-st.set_page_config(page_title="📚 Personal Library Manager", layout="wide")
+st.set_page_config(page_title="📚 Personal Library Manager",page_icon="📖", layout="wide")
 st.title("📖 My Digital Library")
 st.markdown("Welcome to your personal library manager! Organize and track your books effortlessly. 📚")
 

@@ -1,0 +1,7 @@
+jupyter
+pandas
+mypy
+numpy
+pint
+google-generativeai
+python-dotenv

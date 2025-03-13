@@ -1,6 +1,9 @@
 import streamlit as st
 import sqlite3
 
+
+st.set_page_config(page_title="📚 Personal Library Manager", page_icon="📖", layout="wide")
+
 # Connect to SQLite database (or create it if it doesn't exist)
 conn = sqlite3.connect("library.db", check_same_thread=False)
 cursor = conn.cursor()
@@ -63,6 +66,7 @@ def recommend_books(genre):
     return cursor.fetchall()
 
 # Streamlit UI
+
 st.title("📚 Personal Library Manager")
 
 # Sidebar Menu
